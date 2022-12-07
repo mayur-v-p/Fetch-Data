@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.fetchthedata">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,19 @@
         android:theme="@style/Theme.FetchTheData"
         tools:targetApi="31">
         <activity
+            android:name=".EtherAddressPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EtherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TronActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

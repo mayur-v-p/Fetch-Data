@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fetch The Data</string>
+    <string name="ether_scanner">Ether Scanner</string>
 </resources>
