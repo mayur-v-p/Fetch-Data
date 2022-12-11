@@ -33,12 +33,8 @@ public class TronActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tron);
 
-
-
         TextView textView = findViewById(R.id.tv_tron_show_data);
         Button button = findViewById(R.id.btn_tron_fetch_data);
-
-
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
@@ -47,9 +43,6 @@ public class TronActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-
-
-                String API_KEY = "V4ER6WPYVWQY8BQ1GG1AUF4Q59SW8VCBXT";
                 String url = "https://apilist.tronscan.org/api/token_trc20?limit=20&start=0";
 
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

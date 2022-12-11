@@ -39,14 +39,11 @@ public class EtherActivity extends AppCompatActivity {
 
         SpannableStringBuilder builder = new SpannableStringBuilder();
 
-
         String address = EtherAddressPassActivity.getValue();
 
         TextView textView = findViewById(R.id.tv_showData);
         TextView hashShow = findViewById(R.id.tv_hash);
         Button button = findViewById(R.id.fetch_data);
-
-
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
@@ -99,12 +96,7 @@ public class EtherActivity extends AppCompatActivity {
                                     startActivity(urlIntent);
                                 });
 
-
-
-
                                 textView.append("From : " + from + "\n" + "To : " + to + "\n" + "Block No : " + blockNumber + "\n" + "Token Name : " + tokenName + "\n" + "Token Symbol : " + tokenSymbol +  "\n" +"Token Amount : "+ TokenAmount+"\n" + "TimeStamp : " + date + "\n" + "Hash :"+hash + "\n \n");
-
-
 
                             }
 
